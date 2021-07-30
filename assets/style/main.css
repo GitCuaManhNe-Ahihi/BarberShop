@@ -18,9 +18,8 @@ html
 {
      max-width: 100%;
      height: 100vh;
-     background:linear-gradient(to top,var(--color),transparent),url('/assets/image/banner.jpg');
-     background-size:cover;
-     background-position: center;
+     background:linear-gradient(to top,var(--color),transparent),url('./assets/image/banner.jpg');
+     background-size:100% 100%;
     
      
      
@@ -328,25 +327,22 @@ h4::after
 
 .all-service .actor-service:nth-child(1)
 {position: relative;
- background-image: url('/assets/image/pic-1.jpg');
- background-size: cover;
- background-position: center;
+ background-image: url('assets/image/pic-1.jpg');
+ background-size: 100% 100%;
  border-radius: 10px;
 }
 .all-service .actor-service:nth-child(2)
 {position: relative;
- background-image: url('/assets/image/pic-2.jpg');
- background-size: cover;
- background-position: center;
+ background-image: url('assets/image/pic-2.jpg');
+ background-size: 100% 100%;
  margin-left: 27px;
 border-radius: 10px;
 }
 .all-service .actor-service:nth-child(3)
 {position: relative;
- background-image: url('/assets/image/pic-3.jpg');
+ background-image: url('../assets/image/pic-3.jpg');
 
-background-size: cover;
- background-position: center;
+ background-size: 100% 100%;
  margin-top: 20px;
  border-radius: 10px;
 
@@ -354,9 +350,8 @@ background-size: cover;
 .all-service .actor-service:nth-child(4)
 {
 position: relative;
- background-image: url('/assets/image/pic-4.jpg');
- background-size: cover;
- background-position: center;
+ background-image: url('assets/image/pic-4.jpg');
+  background-size: 100% 100%;
  margin-left: 27px;
  margin-top: 20px;
  border-radius: 10px;
