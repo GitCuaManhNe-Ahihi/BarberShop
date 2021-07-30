@@ -11,18 +11,36 @@
 }
 html
 {
-    width: 100vw;
+    
 }
 /***/
 #banner
 {
      max-width: 100%;
      height: 100vh;
-     background:linear-gradient(to top,var(--color),transparent),url('/assets/image/banner.jpg');
      background-size:100% 100%;
     
-     
-     
+}
+#banner .bg
+{  position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+#banner .overlay
+{  
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to top,var(--color),transparent);
+   
 }
 #banner .logo{
     position:absolute;
@@ -301,73 +319,56 @@ h4::after
 
 }
 /**/
-#service
+#service 
 {
     position: relative;
+    top:0;
+    left: 0;
+    right: 0;
     text-align: center;
     padding: 200px 5%;
     font-family: 'Poppins',sans-serif;
-    top: 0;
-    left: 0;
-    background-color: thistle;
-   
+    background-color: rgb(148, 196, 241);
   
 }
-.all-service 
-{
-    
-    display:flex;
-    width: 100%;
-    flex-direction: row;
-    margin-top: 100px;
+#service .all-service
+{   width:70%;
+    display:flex ;
     flex-wrap: wrap;
-    justify-content: center;
-
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
 }
-
-.all-service .actor-service:nth-child(1)
-{position: relative;
- background-image: url('assets/image/pic-1.jpg');
- background-size: 100% 100%;
- border-radius: 10px;
-}
-.all-service .actor-service:nth-child(2)
-{position: relative;
- background-image: url('assets/image/pic-2.jpg');
- background-size: 100% 100%;
- margin-left: 27px;
-border-radius: 10px;
-}
-.all-service .actor-service:nth-child(3)
-{position: relative;
- background-image: url('assets/image/pic-3.jpg');
-
- background-size: 100% 100%;
- margin-top: 20px;
- border-radius: 10px;
-
-}
-.all-service .actor-service:nth-child(4)
+#service .all-service .actor-service
 {
-position: relative;
- background-image: url('assets/image/pic-4.jpg');
-  background-size: 100% 100%;
- margin-left: 27px;
- margin-top: 20px;
- border-radius: 10px;
-
-}
-.all-service .actor-service
-{   height: 300px;
-    flex-basis: 35%;
+    flex-basis: 48%;
+    border-radius: 10%;
+    position: relative;
+    height:300px;
+    margin: 20px 0px;
     display: flex;
     flex-direction: column-reverse;
+    
+
 }
-.overlay
-{  
+
+#service .all-service .actor-service img
+{
     width: 100%;
-    height: 0%;
+    height: 100%;
+    border-radius: 10px;
     position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.overlay
+{   position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 0;
     background: linear-gradient(to top,var(--color),transparent);
     border-radius: 10px;
     transition: height  0.25s linear ;
@@ -377,10 +378,10 @@ position: relative;
     flex-direction: column;
     justify-content: center;
     color: #fff;
+    border-radius: 10px;
 
     
 }
-
 .all-service .actor-service:hover .overlay
 {
     height: 100%;
@@ -402,33 +403,14 @@ position: relative;
     transform: translateX(-50%);
 }
 @media screen and (max-width:881px) {
-    .all-service .actor-service
-        {   
-            flex-basis: 100%;
-            
-            margin: auto;
-            height: 150px;
-        }
-        .all-service .actor-service:nth-child(1)
-        {
-            margin-top: 20px;
-        }
-        .all-service .actor-service:nth-child(2)
-        {
-            margin-left: 0px;
-            margin-top: 20px;
-        }
-        .all-service .actor-service:nth-child(3)
-        {
-         
-            margin-top: 20px;
-        }
-        .all-service .actor-service:nth-child(4)
-        {
-            margin-left: 0px;
-        
-            margin-top: 20px;
-        }
+    #service .all-service .actor-service
+    {
+        flex-basis: 100%;
+    }
+    #service .all-service 
+    {
+        padding-top: 100px;
+    }
 }
 /**/
 #testimonial
